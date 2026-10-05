@@ -1,18 +1,19 @@
 # Facility photos
 
-Drop photos in this folder with these exact names. Any that are missing show a labelled placeholder on the site.
+The page loads these files. Any that are missing show a labelled placeholder.
 
-| File | Where it appears | Best shape |
+| File | Where it appears | Status |
 |---|---|---|
-| `exterior.jpg` | Large photo under the headline (also used for link previews) | Wide landscape |
-| `apartment.jpg` | Care section card | Landscape (4:3) |
-| `living-room.jpg` | Gallery, large tile | Square-ish |
-| `dining.jpg` | Gallery | Landscape |
-| `garden.jpg` | Gallery | Landscape |
-| `memory-care.jpg` | Gallery | Landscape |
-| `activities.jpg` | Gallery | Landscape |
-| `community.jpg` | About section (staff or residents) | Portrait (4:5) |
+| `exterior.webp` | Large photo under the headline | Done |
+| `exterior.jpg` | Link preview image (social/text shares) | Done |
+| `apartment.webp` | Care section card | Done (bedroom) |
+| `living-room.webp` | Gallery, large tile | Done (great room) |
+| `kitchen.webp` | Gallery | Done |
+| `bathroom.webp` | Gallery | Done |
+| `memory-care.jpg` | Gallery | Needed |
+| `activities.jpg` | Gallery | Needed |
+| `community.jpg` | About section (staff or residents), portrait 4:5 | Needed |
 
-Tip: keep each file under ~500 KB (about 2000px on the long side) so the page loads quickly.
+Keep each file under ~500 KB (about 2000px on the long side) so the page loads quickly.
 
-`logo.jpg` and `favicon.png` are exported from the Hearthstone badge PDF and are already in use.
+`logo.jpg` and `favicon.png` are exported from the Hearthstone badge PDF.
