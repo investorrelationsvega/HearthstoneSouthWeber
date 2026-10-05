@@ -19,3 +19,5 @@ The page loads these files. Any that are missing show a labelled placeholder.
 Keep each file under ~500 KB (about 2000px on the long side) so the page loads quickly.
 
 `logo.jpg` and `favicon.png` are exported from the Hearthstone badge PDF.
+
+Each photo also has a smaller `-720.webp` copy (and `exterior-800.webp`) that phones load instead of the full-size file. If you replace a photo, regenerate its small copy too, e.g. `convert images/kitchen.webp -resize 720x -quality 80 images/kitchen-720.webp`.
