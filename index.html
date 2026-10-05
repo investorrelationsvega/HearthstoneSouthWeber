@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hearthstone South Weber | Assisted Living &amp; Memory Care</title>
   <meta name="description" content="Hearthstone South Weber (formerly Petersen Farms Assisted Living) offers assisted living and memory care in a warm, home-like setting in South Weber, Utah.">
-  <meta property="og:title" content="Hearthstone South Weber — Assisted Living & Memory Care">
+  <meta property="og:title" content="Hearthstone South Weber | Assisted Living & Memory Care">
   <meta property="og:description" content="A warm, home-like assisted living and memory care community in South Weber, Utah. Formerly Petersen Farms Assisted Living.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M8 30 32 10l24 20v26H8z' fill='%23a5482c'/%3E%3Cpath d='M32 50c-7 0-11-5-11-10 0-6 6-9 7-15 3 4 4 6 4 9 2-2 3-4 3-7 5 4 8 8 8 13 0 6-4 10-11 10z' fill='%23f6c56b'/%3E%3C/svg%3E">
+  <meta property="og:image" content="images/exterior.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2300273d'/%3E%3Cpath d='M14 30 32 15l18 15M19 26v22h26V26' fill='none' stroke='%23fff' stroke-width='3.5' stroke-linejoin='round'/%3E%3Cpath d='M32 46c-5 0-7-3-7-6 0-4 4-6 5-10 2 3 3 4 3 6 1-1 2-3 2-5 3 3 5 6 5 9 0 4-3 6-8 6z' fill='%23cca300'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -31,149 +32,195 @@
   </script>
   <style>
     :root {
-      --cream: #faf6ef;
-      --linen: #f1e9dc;
-      --stone: #6b645c;
-      --ink: #2b2622;
-      --ember: #a5482c;
-      --ember-dark: #86391f;
-      --flame: #f6c56b;
-      --sage: #5d6f5a;
-      --line: #e2d8c8;
-      --radius: 14px;
-      --max: 1120px;
+      --navy: #00273d;
+      --navy-900: #001a2b;
+      --navy-700: #0b3e5b;
+      --gold: #cca300;
+      --gold-600: #a9871a;
+      --gold-400: #e0bb33;
+      --paper: #f5f1e6;
+      --cream: #efe7d8;
+      --ink: #1e2a33;
+      --muted: #5a6670;
+      --hair: rgba(0, 39, 61, .1);
+      --hair-2: rgba(0, 39, 61, .16);
+      --serif: "Newsreader", Georgia, "Times New Roman", serif;
+      --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --radius: 16px;
+      --radius-lg: 28px;
+      --shadow-sm: 0 1px 2px rgba(0, 26, 43, .05), 0 6px 18px rgba(0, 26, 43, .05);
+      --shadow-lg: 0 30px 70px rgba(0, 26, 43, .16);
+      --maxw: 1200px;
+      --gutter: clamp(20px, 5vw, 56px);
     }
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: "Source Sans 3", system-ui, sans-serif;
-      font-size: 1.125rem;
-      line-height: 1.65;
-      color: var(--ink);
-      background: var(--cream);
-    }
-    h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; line-height: 1.15; margin: 0 0 .5em; }
-    h1 { font-size: clamp(2.4rem, 6vw, 4rem); }
-    h2 { font-size: clamp(1.9rem, 4vw, 2.6rem); }
-    h3 { font-size: 1.35rem; }
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+    body { margin: 0; font-family: var(--sans); font-size: 1.09rem; line-height: 1.7; color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    h1, h2 { font-family: var(--serif); font-weight: 500; color: var(--navy); line-height: 1.08; letter-spacing: -.01em; margin: 0 0 .4em; }
+    h1 { font-size: clamp(2.6rem, 6.4vw, 4.4rem); }
+    h2 { font-size: clamp(2rem, 4.2vw, 3rem); }
+    h3 { font-family: var(--sans); font-weight: 600; font-size: 1.2rem; color: var(--navy); margin: 0 0 .3em; }
+    em.accent { font-style: italic; color: var(--gold-600); }
     p { margin: 0 0 1em; }
-    a { color: var(--ember); }
-    a:focus-visible, button:focus-visible { outline: 3px solid var(--flame); outline-offset: 3px; }
-    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
-    .eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: .85rem; font-weight: 600; color: var(--ember); margin-bottom: .75em; }
-    .btn {
-      display: inline-block; padding: .8em 1.5em; border-radius: 999px;
-      font-weight: 600; text-decoration: none; border: 2px solid var(--ember);
-      transition: background .2s, color .2s;
-    }
-    .btn-primary { background: var(--ember); color: #fff; }
-    .btn-primary:hover { background: var(--ember-dark); border-color: var(--ember-dark); }
-    .btn-ghost { color: var(--ember); background: transparent; }
-    .btn-ghost:hover { background: var(--ember); color: #fff; }
+    a { color: inherit; }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--gold-400); outline-offset: 3px; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--gutter); }
+    .eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; font-weight: 600; color: var(--gold-600); margin: 0 0 1em; }
+    .lead { font-size: 1.22rem; color: var(--muted); max-width: 36em; }
+    .btn { display: inline-flex; align-items: center; gap: .5em; padding: .85em 1.6em; border-radius: 999px; font-weight: 600; font-size: .97rem; text-decoration: none; border: 0; cursor: pointer; font-family: var(--sans); transition: background .2s, transform .2s; }
+    .btn-navy { background: var(--navy); color: #fff; }
+    .btn-navy:hover { background: var(--navy-700); transform: translateY(-1px); }
+    .btn-gold { background: var(--gold); color: var(--navy-900); }
+    .btn-gold:hover { background: var(--gold-400); }
+    .link-arrow { font-weight: 600; color: var(--navy); text-decoration: none; border-bottom: 2px solid var(--gold); padding-bottom: 2px; }
+    .link-arrow:hover { color: var(--gold-600); }
     .skip { position: absolute; left: -999px; }
     .skip:focus { left: 16px; top: 16px; background: #fff; padding: 8px 12px; z-index: 100; }
 
     /* Header */
-    header {
-      position: sticky; top: 0; z-index: 50;
-      background: rgba(250, 246, 239, .94); backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--line);
-    }
-    .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 72px; }
-    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
-    .brand svg { width: 38px; height: 38px; flex: none; }
-    .brand-name { font-family: "Fraunces", Georgia, serif; font-size: 1.3rem; font-weight: 600; line-height: 1.1; }
-    .brand-name small { display: block; font-family: "Source Sans 3", sans-serif; font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--stone); font-weight: 600; }
-    .nav ul { display: flex; gap: 26px; list-style: none; margin: 0; padding: 0; }
-    .nav ul a { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 1rem; }
-    .nav ul a:hover { color: var(--ember); }
-    .nav .btn { padding: .55em 1.1em; font-size: 1rem; }
-    .menu-toggle { display: none; background: none; border: 0; padding: 8px; cursor: pointer; color: var(--ink); }
+    header { position: sticky; top: 0; z-index: 50; background: rgba(251, 248, 242, .86); backdrop-filter: blur(12px); border-bottom: 1px solid var(--hair); }
+    .nav { display: flex; align-items: center; gap: 28px; min-height: 80px; }
+    .brand { display: flex; flex-direction: column; text-decoration: none; line-height: 1; margin-right: auto; }
+    .brand-main { font-family: var(--serif); font-size: 1.6rem; font-weight: 500; color: var(--navy); letter-spacing: .01em; }
+    .brand-sub { font-size: .66rem; letter-spacing: .42em; text-transform: uppercase; color: var(--gold-600); font-weight: 600; margin-top: 5px; }
+    .nav ul { display: flex; gap: 30px; list-style: none; margin: 0; padding: 0; }
+    .nav ul a { text-decoration: none; font-weight: 500; font-size: .98rem; color: var(--navy); padding: 6px 0; border-bottom: 2px solid transparent; }
+    .nav ul a:hover { border-color: var(--gold); }
+    .nav-phone { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--navy); text-decoration: none; white-space: nowrap; }
+    .nav-phone svg { color: var(--gold-600); }
+    .menu-toggle { display: none; background: none; border: 0; padding: 8px; cursor: pointer; color: var(--navy); }
 
     /* Hero */
-    .hero {
-      position: relative; overflow: hidden;
-      background:
-        radial-gradient(ellipse at 85% 110%, rgba(246, 197, 107, .45), transparent 55%),
-        linear-gradient(160deg, var(--linen), var(--cream) 60%);
-      padding: 96px 0 104px;
-    }
-    .hero-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 48px; align-items: center; }
-    .hero p.lead { font-size: 1.3rem; color: var(--stone); max-width: 34em; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
-    .hero-note { margin-top: 28px; font-size: .98rem; color: var(--stone); }
-    .hero-art { justify-self: center; width: 100%; max-width: 380px; }
+    .hero { padding: clamp(64px, 9vw, 112px) 0 0; text-align: center; }
+    .hero .lead { margin: 0 auto 1.6em; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 22px; justify-content: center; align-items: center; }
+    .hero-note { margin-top: 26px; font-size: .95rem; color: var(--muted); }
+    .hero-note strong { color: var(--navy); font-weight: 600; }
+    .hero-photo { margin-top: clamp(48px, 7vw, 80px); }
+    .hero-photo .photo { aspect-ratio: 21 / 9; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); }
 
-    /* Sections */
-    section { padding: 88px 0; }
-    .section-head { max-width: 680px; margin-bottom: 44px; }
-    .alt { background: var(--linen); }
+    /* Photos: an <img> sits over a labelled placeholder; if the file is missing the img removes itself */
+    .photo { position: relative; overflow: hidden; border-radius: var(--radius); background: linear-gradient(135deg, #e6dcc8, #d9cdb5); }
+    .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .photo::before { content: attr(data-label); position: absolute; inset: 0; display: grid; place-items: center; font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; color: rgba(0, 39, 61, .45); padding: 12px; text-align: center; }
+    figure { margin: 0; }
+    figcaption { font-size: .92rem; color: var(--muted); margin-top: 10px; }
 
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
-    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 8px; }
-    .stat { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 18px; text-align: center; }
-    .stat b { display: block; font-family: "Fraunces", serif; font-size: 2.2rem; color: var(--ember); line-height: 1.1; }
-    .stat span { font-size: .95rem; color: var(--stone); }
+    section { padding: clamp(72px, 10vw, 120px) 0; }
+    .tint { background: var(--cream); }
+    .section-head { max-width: 640px; margin-bottom: 56px; }
 
-    .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-    .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 34px; }
-    .card ul { margin: 0; padding-left: 1.2em; }
-    .card li { margin-bottom: .35em; }
-    .card .icon { width: 48px; height: 48px; border-radius: 12px; background: var(--linen); display: grid; place-items: center; margin-bottom: 18px; color: var(--ember); }
+    /* Pillars */
+    .pillars { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+    .pillar { border-top: 1.5px solid var(--hair-2); padding-top: 28px; }
+    .pillar svg { color: var(--navy); margin-bottom: 22px; }
+    .pillar p { color: var(--muted); font-size: 1rem; margin: 0; }
 
-    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .feature { padding: 26px; border-radius: var(--radius); background: var(--cream); border: 1px solid var(--line); }
-    .feature h3 { font-size: 1.15rem; margin-bottom: .35em; }
-    .feature p { margin: 0; color: var(--stone); font-size: 1.02rem; }
+    /* Care */
+    .care-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .care-list { list-style: none; padding: 0; margin: 32px 0 0; border-top: 1px solid var(--hair); }
+    .care-list li { padding: 22px 0; border-bottom: 1px solid var(--hair); }
+    .care-list p { color: var(--muted); font-size: 1rem; margin: 0; }
+    .care-card { background: #fff; border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow-sm); }
+    .care-card .photo { aspect-ratio: 4 / 3; margin: -12px -12px 28px; border-radius: 18px; }
+    .care-card ul { margin: 0 0 24px; padding: 0; list-style: none; }
+    .care-card li { padding: 6px 0 6px 30px; position: relative; color: var(--ink); font-size: 1rem; }
+    .care-card li::before { content: ""; position: absolute; left: 4px; top: 15px; width: 12px; height: 7px; border-left: 2px solid var(--gold-600); border-bottom: 2px solid var(--gold-600); transform: rotate(-45deg); }
 
-    .faq details { border-bottom: 1px solid var(--line); padding: 18px 0; }
-    .faq summary { cursor: pointer; font-weight: 600; font-size: 1.15rem; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+    /* Gallery */
+    .gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; gap: 16px; }
+    .gallery .photo { height: 100%; }
+    .gallery .g-wide { grid-column: span 2; }
+    .gallery .g-tall { grid-row: span 2; }
+
+    /* About / numbers */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .about-grid .photo { aspect-ratio: 4 / 5; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); }
+    .numbers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 36px; border-top: 1px solid var(--hair-2); padding-top: 28px; }
+    .numbers b { display: block; font-family: var(--serif); font-weight: 500; font-size: 2.6rem; line-height: 1; color: var(--navy); }
+    .numbers span { font-size: .92rem; color: var(--muted); }
+
+    /* Life */
+    .life-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 32px; }
+    .life-grid > div { border-top: 1.5px solid var(--hair-2); padding-top: 24px; }
+    .life-grid p { color: var(--muted); font-size: 1rem; margin: 0; }
+
+    /* FAQ */
+    .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 64px; }
+    .faq details { border-bottom: 1px solid var(--hair-2); padding: 22px 0; }
+    .faq details:first-child { border-top: 1px solid var(--hair-2); }
+    .faq summary { cursor: pointer; font-weight: 600; color: var(--navy); list-style: none; display: flex; justify-content: space-between; gap: 16px; }
     .faq summary::-webkit-details-marker { display: none; }
-    .faq summary::after { content: "+"; color: var(--ember); font-size: 1.5rem; line-height: 1; }
-    .faq details[open] summary::after { content: "–"; }
-    .faq details p { margin: 12px 0 0; color: var(--stone); }
+    .faq summary::after { content: "+"; color: var(--gold-600); font-size: 1.4rem; line-height: 1; font-weight: 400; }
+    .faq details[open] summary::after { content: "\2212"; }
+    .faq details p { margin: 12px 0 0; color: var(--muted); }
 
-    .visit-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 40px; align-items: stretch; }
-    .contact-card { background: var(--ink); color: var(--cream); border-radius: var(--radius); padding: 40px; }
-    .contact-card h2 { color: #fff; }
-    .contact-card a { color: var(--flame); }
-    .contact-card dl { margin: 24px 0 28px; }
-    .contact-card dt { text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; color: #c8bfb3; font-weight: 600; }
-    .contact-card dd { margin: 4px 0 18px; font-size: 1.2rem; }
-    .contact-card .btn-primary { border-color: var(--flame); background: var(--flame); color: var(--ink); }
-    .contact-card .btn-primary:hover { background: #fff; border-color: #fff; }
-    .map { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); min-height: 380px; }
-    .map iframe { width: 100%; height: 100%; min-height: 380px; border: 0; display: block; }
+    /* Contact band */
+    .contact { background: var(--navy); color: #dbe3e8; }
+    .contact h2 { color: #fff; }
+    .contact em.accent { color: var(--gold-400); }
+    .contact .lead { color: #b7c4cc; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .contact-items { list-style: none; padding: 0; margin: 36px 0; }
+    .contact-items li { display: flex; gap: 18px; margin-bottom: 24px; }
+    .contact-items .ic { flex: none; width: 46px; height: 46px; border-radius: 12px; background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .1); display: grid; place-items: center; color: var(--gold-400); }
+    .contact-items b { display: block; color: #fff; font-weight: 600; }
+    .contact-items a { color: #dbe3e8; text-decoration: none; }
+    .contact-items a:hover { color: #fff; }
+    .map { border-radius: var(--radius); overflow: hidden; height: 240px; border: 1px solid rgba(255, 255, 255, .12); background: var(--navy-700); }
+    .map iframe { width: 100%; height: 100%; border: 0; display: block; }
+    .form-card { background: #fff; color: var(--ink); border-radius: var(--radius-lg); padding: 42px; box-shadow: var(--shadow-lg); }
+    .form-card h3 { font-size: 1.35rem; }
+    .form-card > p { color: var(--muted); font-size: .97rem; }
+    .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 24px; }
+    .fields .full { grid-column: 1 / -1; }
+    label { display: block; font-size: .85rem; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+    label .req { color: var(--gold-600); }
+    input, select, textarea { width: 100%; font: inherit; font-size: 1rem; padding: 13px 15px; border: 1px solid #d3d8dc; border-radius: 12px; background: #f3f5f6; color: var(--ink); }
+    textarea { min-height: 110px; resize: vertical; }
+    .form-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 24px; }
+    .form-foot small { color: var(--muted); }
+    .form-status { margin: 16px 0 0; font-size: .95rem; color: var(--navy); font-weight: 500; }
 
-    footer { background: var(--linen); border-top: 1px solid var(--line); padding: 36px 0; font-size: .95rem; color: var(--stone); }
-    .foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+    footer { background: var(--navy-900); color: #93a3ad; padding: 72px 0 36px; font-size: .95rem; }
+    .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 48px; }
+    footer .brand-main { color: #fff; }
+    footer h4 { text-transform: uppercase; letter-spacing: .16em; font-size: .75rem; color: #93a3ad; margin: 0 0 18px; font-weight: 600; }
+    footer ul { list-style: none; margin: 0; padding: 0; }
+    footer li { margin-bottom: 10px; }
+    footer a { color: #d4dde2; text-decoration: none; }
+    footer a:hover { color: #fff; }
+    .foot-bottom { margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, .1); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: .88rem; }
 
-    @media (max-width: 900px) {
-      .hero-grid, .about-grid, .visit-grid { grid-template-columns: 1fr; }
-      .hero-art { max-width: 260px; order: -1; }
-      .features { grid-template-columns: 1fr 1fr; }
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+
+    @media (max-width: 1000px) {
+      .pillars { grid-template-columns: 1fr 1fr; }
+      .care-grid, .about-grid, .faq-grid, .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .about-grid .photo { aspect-ratio: 4 / 3; }
+      .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
       .menu-toggle { display: block; }
-      .nav ul {
-        display: none; position: absolute; top: 72px; left: 0; right: 0;
-        flex-direction: column; gap: 0; background: var(--cream); border-bottom: 1px solid var(--line);
-        padding: 8px 20px 16px;
-      }
+      .nav ul { display: none; position: absolute; top: 80px; left: 0; right: 0; flex-direction: column; gap: 0; background: #fbf8f2; border-bottom: 1px solid var(--hair); padding: 8px var(--gutter) 18px; }
       .nav ul.open { display: flex; }
       .nav ul a { display: block; padding: 12px 0; }
-      .nav > .btn { display: none; }
+      .nav .btn { display: none; }
     }
     @media (max-width: 640px) {
-      body { font-size: 1.06rem; }
-      section { padding: 64px 0; }
-      .hero { padding: 56px 0 72px; }
-      .cards, .features { grid-template-columns: 1fr; }
-      .stats { grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
-      .stat { padding: 16px 8px; }
-      .stat b { font-size: 1.7rem; }
-      .card, .contact-card { padding: 26px; }
+      body { font-size: 1.03rem; }
+      .nav-phone span { display: none; }
+      .pillars, .life-grid, .fields { grid-template-columns: 1fr; }
+      .hero-photo .photo { aspect-ratio: 4 / 3; }
+      .gallery { grid-auto-rows: 140px; gap: 10px; }
+      .care-card, .form-card { padding: 28px; }
+      .numbers b { font-size: 2rem; }
+      .foot-grid { grid-template-columns: 1fr; gap: 32px; }
     }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
   </style>
 </head>
 <body>
@@ -182,180 +229,283 @@
   <header>
     <div class="wrap nav">
       <a class="brand" href="#top" aria-label="Hearthstone South Weber home">
-        <svg viewBox="0 0 64 64" aria-hidden="true">
-          <path d="M8 30 32 10l24 20v26H8z" fill="#a5482c"/>
-          <path d="M32 50c-7 0-11-5-11-10 0-6 6-9 7-15 3 4 4 6 4 9 2-2 3-4 3-7 5 4 8 8 8 13 0 6-4 10-11 10z" fill="#f6c56b"/>
-        </svg>
-        <span class="brand-name">Hearthstone<small>South Weber</small></span>
+        <span class="brand-main">Hearthstone</span>
+        <span class="brand-sub">South Weber</span>
       </a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
       <ul id="nav-links">
-        <li><a href="#about">About</a></li>
         <li><a href="#care">Care</a></li>
-        <li><a href="#life">Daily Life</a></li>
+        <li><a href="#tour">Our Home</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="#visit">Visit</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <a class="btn btn-primary" href="tel:+18014796000">Call (801) 479-6000</a>
+      <a class="nav-phone" href="tel:+18014796000">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+        <span>(801) 479-6000</span>
+      </a>
+      <a class="btn btn-navy" href="#contact">Schedule a tour</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">Assisted Living &amp; Memory Care · South Weber, Utah</p>
-          <h1>A warm place to call home.</h1>
-          <p class="lead">Hearthstone South Weber is a small, close-knit community where residents get the help they need every day, and families know the people caring for them.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#visit">Schedule a Tour</a>
-            <a class="btn btn-ghost" href="#care">Explore Care Options</a>
-          </div>
-          <p class="hero-note">Formerly <strong>Petersen Farms Assisted Living &amp; Memory Care</strong>. Same address, same home, new name.</p>
-        </div>
-        <svg class="hero-art" viewBox="0 0 320 300" role="img" aria-label="Illustration of a home with a glowing hearth">
-          <ellipse cx="160" cy="276" rx="150" ry="16" fill="#e2d8c8"/>
-          <path d="M40 140 160 44l120 96v132H40z" fill="#fff" stroke="#e2d8c8" stroke-width="3"/>
-          <path d="M22 148 160 34l138 114" fill="none" stroke="#a5482c" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
-          <rect x="214" y="58" width="26" height="54" rx="3" fill="#6b645c"/>
-          <rect x="98" y="166" width="124" height="106" rx="6" fill="#6b645c"/>
-          <rect x="112" y="180" width="96" height="92" rx="46" fill="#2b2622"/>
-          <path d="M160 266c-20 0-30-13-30-27 0-16 15-24 19-40 8 10 10 16 10 24 6-5 9-11 9-19 13 11 22 22 22 36 0 15-10 26-30 26z" fill="#f6c56b"/>
-          <path d="M160 266c-10 0-15-7-15-14 0-9 8-13 10-22 7 7 20 13 20 22 0 8-5 14-15 14z" fill="#a5482c"/>
-          <g fill="#e2d8c8"><rect x="58" y="160" width="28" height="28" rx="4"/><rect x="234" y="160" width="28" height="28" rx="4"/></g>
-        </svg>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="wrap about-grid">
-        <div>
-          <p class="eyebrow">About Us</p>
-          <h2>Small by design, so everyone is known.</h2>
-          <p>Our community sits in a quiet South Weber neighborhood at the mouth of Weber Canyon, minutes from Ogden Regional Medical Center and close to family across Davis and Weber counties.</p>
-          <p>We've cared for residents here since 2019 as Petersen Farms. Now as Hearthstone South Weber, we're building on that foundation: attentive caregivers, home-cooked meals, and a calendar full of things to look forward to.</p>
-        </div>
-        <div>
-          <div class="stats">
-            <div class="stat"><b>17</b><span>Assisted living studios</span></div>
-            <div class="stat"><b>11</b><span>Private memory care apartments</span></div>
-            <div class="stat"><b>24/7</b><span>On-site care &amp; supervision</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="care" class="alt">
       <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">Care Options</p>
-          <h2>The right support, at the right level.</h2>
-          <p>Every resident gets a personal care plan built with them and their family, and we revisit it as needs change.</p>
+        <p class="eyebrow">Assisted Living &amp; Memory Care · South Weber, Utah</p>
+        <h1>A place that feels like <em class="accent">home.</em></h1>
+        <p class="lead">Hearthstone South Weber is a small, close-knit community where residents get the help they need every day, and families know the people caring for them.</p>
+        <div class="hero-actions">
+          <a class="btn btn-navy" href="#contact">Schedule a tour</a>
+          <a class="link-arrow" href="#tour">See our home</a>
         </div>
-        <div class="cards">
-          <article class="card">
-            <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7v9H3z"/><path d="M9 20v-6h6v6"/></svg></div>
-            <h3>Assisted Living</h3>
-            <p>Private studio apartments for seniors who want independence with a helping hand.</p>
+        <p class="hero-note">Formerly <strong>Petersen Farms Assisted Living &amp; Memory Care</strong>. Same home, same address, new name.</p>
+        <div class="hero-photo">
+          <div class="photo" data-label="Exterior photo">
+            <img src="images/exterior.jpg" alt="The front of Hearthstone South Weber" onerror="this.remove()">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Care that knows each resident <em class="accent">by name.</em></h2>
+          <p class="lead">A smaller community means more time together, and a team that notices the little things.</p>
+        </div>
+        <div class="pillars">
+          <div class="pillar reveal">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M12 17.5c-1.7 0-2.5-1-2.5-2.2 0-1.4 1.3-2 1.6-3.4.7.8 1 1.4 1 2 .5-.4.8-1 .8-1.6 1 .9 1.6 1.9 1.6 3 0 1.3-.8 2.2-2.5 2.2z"/></svg>
+            <h3>Home-like</h3>
+            <p>Private apartments and shared spaces that feel like a house, not a hospital.</p>
+          </div>
+          <div class="pillar reveal">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <h3>Around the clock</h3>
+            <p>Caregivers on site 24 hours a day, with a call system in every apartment.</p>
+          </div>
+          <div class="pillar reveal">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+            <h3>Personal</h3>
+            <p>A care plan built with each resident and family, and revisited as needs change.</p>
+          </div>
+          <div class="pillar reveal">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M3 19c0-3 2.2-5 5-5s5 2 5 5"/><path d="M14 14.5c.8-.4 1.6-.5 2.5-.5 2.4 0 4.5 1.8 4.5 4.5"/></svg>
+            <h3>Family connected</h3>
+            <p>Regular updates, open visiting, and a team that's easy to reach.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="care" class="tint">
+      <div class="wrap">
+        <div class="care-grid">
+          <div class="reveal">
+            <h2>The right support, at the <em class="accent">right level.</em></h2>
+            <p class="lead">Two levels of care under one roof, so residents can stay in a place they know as their needs change.</p>
+            <ul class="care-list">
+              <li><h3>Assisted Living</h3><p>Private studio apartments for seniors who want independence with a helping hand: medications, bathing, dressing, meals, and housekeeping.</p></li>
+              <li><h3>Memory Care</h3><p>A secure, calm setting with structured routines and 24/7 supervision for residents living with Alzheimer's disease or other dementia.</p></li>
+            </ul>
+          </div>
+          <div class="care-card reveal">
+            <div class="photo" data-label="Apartment photo">
+              <img src="images/apartment.jpg" alt="A resident apartment at Hearthstone South Weber" onerror="this.remove()">
+            </div>
+            <h3>Every apartment includes</h3>
             <ul>
               <li>Help with bathing, dressing, and transfers</li>
               <li>Medication management</li>
-              <li>24-hour call system and staff</li>
-              <li>Three meals a day, with special diets accommodated</li>
+              <li>24-hour call system and on-site staff</li>
+              <li>Three meals a day, special diets accommodated</li>
               <li>Housekeeping and laundry</li>
+              <li>Wheelchair-accessible design</li>
             </ul>
-          </article>
-          <article class="card">
-            <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 6.5-7 11-7 11z"/></svg></div>
-            <h3>Memory Care</h3>
-            <p>A secure, calm setting for residents living with Alzheimer's disease or other forms of dementia.</p>
-            <ul>
-              <li>Private memory care apartments</li>
-              <li>Secured environment with 24/7 supervision</li>
-              <li>Structured daily routines and engagement</li>
-              <li>Incontinence and non-ambulatory care</li>
-              <li>Regular updates for families</li>
-            </ul>
-          </article>
+            <a class="link-arrow" href="#contact">Ask about availability</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="life">
+    <section id="tour">
       <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">Daily Life</p>
-          <h2>More than care: a full, comfortable life.</h2>
+        <div class="section-head reveal">
+          <p class="eyebrow">Our Home</p>
+          <h2>Take a look <em class="accent">inside.</em></h2>
+          <p class="lead">Bright common rooms, home-cooked meals at the table, and gardens just outside the door.</p>
         </div>
-        <div class="features">
-          <div class="feature"><h3>Restaurant-style dining</h3><p>Home-cooked meals served together, with options for special diets.</p></div>
-          <div class="feature"><h3>Gardens &amp; walking paths</h3><p>Outdoor space for fresh air, sunshine, and a stroll with family.</p></div>
-          <div class="feature"><h3>Activities calendar</h3><p>Movie nights, crafts in the arts room, games, music, and resident-led activities.</p></div>
-          <div class="feature"><h3>Faith &amp; devotionals</h3><p>On-site and off-site devotional opportunities for those who want them.</p></div>
-          <div class="feature"><h3>Salon &amp; barber</h3><p>Haircuts and styling without leaving home.</p></div>
-          <div class="feature"><h3>Furnished, accessible rooms</h3><p>Wheelchair-accessible apartments, ready to make your own.</p></div>
+        <div class="gallery reveal">
+          <div class="photo g-wide g-tall" data-label="Living room">
+            <img src="images/living-room.jpg" alt="The living room at Hearthstone South Weber" onerror="this.remove()">
+          </div>
+          <div class="photo" data-label="Dining room">
+            <img src="images/dining.jpg" alt="The dining room" onerror="this.remove()">
+          </div>
+          <div class="photo" data-label="Garden">
+            <img src="images/garden.jpg" alt="The garden and walking path" onerror="this.remove()">
+          </div>
+          <div class="photo" data-label="Memory care">
+            <img src="images/memory-care.jpg" alt="The memory care common area" onerror="this.remove()">
+          </div>
+          <div class="photo" data-label="Activity room">
+            <img src="images/activities.jpg" alt="The activity and arts room" onerror="this.remove()">
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="faq" class="alt">
-      <div class="wrap faq">
-        <div class="section-head">
+    <section id="about" class="tint">
+      <div class="wrap about-grid">
+        <div class="photo reveal" data-label="Staff or residents photo">
+          <img src="images/community.jpg" alt="The Hearthstone South Weber team" onerror="this.remove()">
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">About Hearthstone</p>
+          <h2>Small by design, so <em class="accent">everyone is known.</em></h2>
+          <p>Our community sits in a quiet South Weber neighborhood at the mouth of Weber Canyon, minutes from Ogden Regional Medical Center and close to family across Davis and Weber counties.</p>
+          <p>We've cared for residents here since 2019 as Petersen Farms. As Hearthstone South Weber, we're building on that foundation with attentive caregivers, home-cooked meals, and a calendar full of things to look forward to.</p>
+          <div class="numbers">
+            <div><b>17</b><span>Assisted living studios</span></div>
+            <div><b>11</b><span>Memory care apartments</span></div>
+            <div><b>24/7</b><span>On-site caregivers</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>More than care: a full, <em class="accent">comfortable life.</em></h2>
+        </div>
+        <div class="life-grid">
+          <div class="reveal"><h3>Restaurant-style dining</h3><p>Home-cooked meals served together, with options for special diets.</p></div>
+          <div class="reveal"><h3>Gardens &amp; walking paths</h3><p>Outdoor space for fresh air, sunshine, and a stroll with family.</p></div>
+          <div class="reveal"><h3>Activities calendar</h3><p>Movie nights, crafts in the arts room, games, music, and resident-led activities.</p></div>
+          <div class="reveal"><h3>Faith &amp; devotionals</h3><p>On-site and off-site devotional opportunities for those who want them.</p></div>
+          <div class="reveal"><h3>Salon &amp; barber</h3><p>Haircuts and styling without leaving home.</p></div>
+          <div class="reveal"><h3>Furnished, accessible rooms</h3><p>Wheelchair-accessible apartments, ready to make your own.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="tint">
+      <div class="wrap faq-grid">
+        <div class="reveal">
           <p class="eyebrow">Questions</p>
-          <h2>Frequently asked questions</h2>
+          <h2>Answers for <em class="accent">families.</em></h2>
+          <p class="lead">Don't see your question? Call us. We're happy to talk it through.</p>
         </div>
-        <details>
-          <summary>Is Hearthstone South Weber the same place as Petersen Farms?</summary>
-          <p>Yes. Petersen Farms Assisted Living &amp; Memory Care is now Hearthstone South Weber. We're at the same address, 6980 South 475 East in South Weber.</p>
-        </details>
-        <details>
-          <summary>What's the difference between assisted living and memory care?</summary>
-          <p>Assisted living is for seniors who are largely independent but need help with daily tasks like medications, bathing, or dressing. Memory care adds a secure setting, more supervision, and structured routines for people living with dementia.</p>
-        </details>
-        <details>
-          <summary>How much does it cost?</summary>
-          <p>Cost depends on the apartment and the level of care each resident needs. Call us and we'll walk you through current availability and pricing.</p>
-        </details>
-        <details>
-          <summary>Can we visit before deciding?</summary>
-          <p>Please do. We'd love to show you around, introduce you to our team, and answer your questions in person. Call to set up a time.</p>
-        </details>
+        <div class="faq reveal">
+          <details>
+            <summary>Is Hearthstone South Weber the same place as Petersen Farms?</summary>
+            <p>Yes. Petersen Farms Assisted Living &amp; Memory Care is now Hearthstone South Weber. We're at the same address, 6980 South 475 East in South Weber.</p>
+          </details>
+          <details>
+            <summary>What's the difference between assisted living and memory care?</summary>
+            <p>Assisted living is for seniors who are largely independent but need help with daily tasks like medications, bathing, or dressing. Memory care adds a secure setting, more supervision, and structured routines for people living with dementia.</p>
+          </details>
+          <details>
+            <summary>How much does it cost?</summary>
+            <p>Cost depends on the apartment and the level of care each resident needs. Call us and we'll walk you through current availability and pricing.</p>
+          </details>
+          <details>
+            <summary>Can we visit before deciding?</summary>
+            <p>Please do. We'd love to show you around, introduce you to our team, and answer your questions in person.</p>
+          </details>
+        </div>
       </div>
     </section>
 
-    <section id="visit">
-      <div class="wrap visit-grid">
-        <div class="contact-card">
-          <p class="eyebrow" style="color: var(--flame);">Visit Us</p>
-          <h2>Come see Hearthstone for yourself.</h2>
-          <p>Tours are the best way to get a feel for our community. Give us a call to set one up.</p>
-          <dl>
-            <dt>Phone</dt>
-            <dd><a href="tel:+18014796000">(801) 479-6000</a></dd>
-            <dt>Address</dt>
-            <dd>6980 South 475 East<br>South Weber, UT 84405</dd>
-          </dl>
-          <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=6980+South+475+East+South+Weber+UT+84405" target="_blank" rel="noopener">Get Directions</a>
+    <section id="contact" class="contact">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <p class="eyebrow" style="color: var(--gold-400);">Visit Us</p>
+          <h2>Come see Hearthstone <em class="accent">for yourself.</em></h2>
+          <p class="lead">A tour is the best way to get a feel for our home. Reach out any time to set one up.</p>
+          <ul class="contact-items">
+            <li>
+              <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+              <div><b>Call us</b><a href="tel:+18014796000">(801) 479-6000</a></div>
+            </li>
+            <li>
+              <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+              <div><b>Visit</b><a href="https://www.google.com/maps/dir/?api=1&amp;destination=6980+South+475+East+South+Weber+UT+84405" target="_blank" rel="noopener">6980 South 475 East<br>South Weber, UT 84405</a></div>
+            </li>
+          </ul>
+          <div class="map">
+            <iframe title="Map to Hearthstone South Weber" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=6980+South+475+East,+South+Weber,+UT+84405&amp;output=embed"></iframe>
+          </div>
         </div>
-        <div class="map">
-          <iframe title="Map to Hearthstone South Weber" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=6980+South+475+East,+South+Weber,+UT+84405&amp;output=embed"></iframe>
+        <div class="form-card reveal">
+          <h3>Schedule a tour</h3>
+          <p>Tell us a little about your situation and we'll reach out to set up a time.</p>
+          <form id="tour-form">
+            <div class="fields">
+              <div><label for="f-name">Your name <span class="req">*</span></label><input id="f-name" name="name" autocomplete="name" required></div>
+              <div><label for="f-phone">Phone <span class="req">*</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+              <div><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+              <div><label for="f-care">Type of care</label>
+                <select id="f-care" name="care">
+                  <option>Not sure yet</option>
+                  <option>Assisted living</option>
+                  <option>Memory care</option>
+                </select>
+              </div>
+              <div class="full"><label for="f-msg">How can we help?</label><textarea id="f-msg" name="message" placeholder="Share anything that would help us understand your situation..."></textarea></div>
+            </div>
+            <div class="form-foot">
+              <button class="btn btn-navy" type="submit">Send message</button>
+              <small>No obligation. We'll be in touch soon.</small>
+            </div>
+            <p class="form-status" id="form-status" role="status" hidden></p>
+          </form>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap foot">
-      <span>&copy; <span id="year">2026</span> Hearthstone South Weber · Formerly Petersen Farms Assisted Living &amp; Memory Care</span>
-      <span>6980 South 475 East, South Weber, UT 84405 · <a href="tel:+18014796000">(801) 479-6000</a></span>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <span class="brand-main">Hearthstone</span>
+          <p style="margin-top: 14px; max-width: 26em;">Assisted living and memory care in South Weber, Utah. Formerly Petersen Farms Assisted Living &amp; Memory Care.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#care">Care</a></li>
+            <li><a href="#tour">Our Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="tel:+18014796000">(801) 479-6000</a></li>
+            <li>6980 South 475 East<br>South Weber, UT 84405</li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>&copy; <span id="year">2026</span> Hearthstone South Weber. All rights reserved.</span>
+        <span>Comfort · Care · Community</span>
+      </div>
     </div>
   </footer>
 
   <script>
+    // Set to a form endpoint (e.g. Formspree or FormSubmit URL) to receive tour requests by email.
+    const FORM_ENDPOINT = '';
+
     document.getElementById('year').textContent = new Date().getFullYear();
+
     const toggle = document.querySelector('.menu-toggle');
     const links = document.getElementById('nav-links');
     toggle.addEventListener('click', () => {
@@ -365,6 +515,35 @@
     links.addEventListener('click', e => {
       if (e.target.tagName === 'A') { links.classList.remove('open'); toggle.setAttribute('aria-expanded', false); }
     });
+
+    const form = document.getElementById('tour-form');
+    const status = document.getElementById('form-status');
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      status.hidden = false;
+      if (!FORM_ENDPOINT) {
+        status.textContent = 'Online requests are coming soon. Please call us at (801) 479-6000 to schedule your tour.';
+        return;
+      }
+      status.textContent = 'Sending...';
+      try {
+        const res = await fetch(FORM_ENDPOINT, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+        if (!res.ok) throw new Error();
+        form.reset();
+        status.textContent = "Thank you! We'll be in touch soon.";
+      } catch {
+        status.textContent = 'Something went wrong. Please call us at (801) 479-6000.';
+      }
+    });
+
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(entries => entries.forEach(en => {
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      }), { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+    }
   </script>
 </body>
 </html>
