@@ -70,11 +70,14 @@
     .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--gutter); }
     .eyebrow { font-family: var(--caps); text-transform: uppercase; letter-spacing: .24em; font-size: .8rem; font-weight: 500; color: var(--olive-600); margin: 0 0 1em; }
     .lead { font-size: 1.22rem; color: var(--muted); max-width: 36em; }
-    .btn { display: inline-flex; align-items: center; gap: .5em; padding: .85em 1.6em; border-radius: 999px; font-weight: 600; font-size: .97rem; text-decoration: none; border: 0; cursor: pointer; font-family: var(--sans); transition: background .2s, transform .2s; }
-    .btn-dark { background: var(--olive); color: #fff; }
-    .btn-dark:hover { background: var(--olive-600); transform: translateY(-1px); }
-    .link-arrow { font-weight: 600; color: var(--charcoal); text-decoration: none; border-bottom: 2px solid var(--olive); padding-bottom: 2px; }
-    .link-arrow:hover { color: var(--olive-600); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 1em 1.9em; border-radius: 3px; border: 1px solid transparent; font-family: var(--caps); font-weight: 500; font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; text-decoration: none; line-height: 1.2; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+    .btn-dark { background: var(--olive); border-color: var(--olive); color: #fff; }
+    .btn-dark:hover { background: var(--olive-600); border-color: var(--olive-600); }
+    .btn-line { background: transparent; border-color: var(--charcoal); color: var(--charcoal); }
+    .btn-line:hover { background: var(--charcoal); color: #fff; }
+    .text-link { color: var(--olive-600); font-weight: 500; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    .text-link:hover { color: var(--charcoal); }
+    .nav > .btn { padding: .85em 1.4em; }
     .divider { display: flex; align-items: center; justify-content: center; gap: 14px; color: var(--olive); margin: 6px auto 26px; max-width: 280px; }
     .divider::before, .divider::after { content: ""; flex: 1; height: 1px; background: var(--olive-400); }
     .skip { position: absolute; left: -999px; }
@@ -92,14 +95,14 @@
     .nav ul { display: flex; gap: 30px; list-style: none; margin: 0; padding: 0; }
     .nav ul a { text-decoration: none; font-weight: 500; font-size: .98rem; color: var(--charcoal); padding: 6px 0; border-bottom: 2px solid transparent; }
     .nav ul a:hover { border-color: var(--olive); }
-    .nav-phone { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--charcoal); text-decoration: none; white-space: nowrap; }
+    .nav-phone { display: flex; align-items: center; gap: 8px; font-weight: 500; color: var(--charcoal); text-decoration: none; white-space: nowrap; }
     .nav-phone svg { color: var(--brick); }
     .menu-toggle { display: none; background: none; border: 0; padding: 8px; cursor: pointer; color: var(--charcoal); }
 
     /* Hero */
     .hero { padding: clamp(64px, 9vw, 112px) 0 0; text-align: center; }
     .hero .lead { margin: 0 auto 1.6em; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 22px; justify-content: center; align-items: center; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; align-items: center; }
     .hero-note { margin-top: 26px; font-size: .95rem; color: var(--muted); }
     .hero-note strong { color: var(--charcoal); font-weight: 600; }
     .hero-photo { margin-top: clamp(48px, 7vw, 80px); }
@@ -262,7 +265,7 @@
         <p class="lead">Hearthstone of South Weber is a small, close-knit community where residents get the help they need every day, and families know the people caring for them.</p>
         <div class="hero-actions">
           <a class="btn btn-dark" href="#contact">Schedule a tour</a>
-          <a class="link-arrow" href="#tour">See our home</a>
+          <a class="btn btn-line" href="#tour">See our home</a>
         </div>
         <p class="hero-note">Formerly <strong>Petersen Farms Assisted Living &amp; Memory Care</strong>. Same home, same address, new name.</p>
         <div class="hero-photo">
@@ -328,7 +331,7 @@
               <li>Housekeeping and laundry</li>
               <li>Wheelchair-accessible design</li>
             </ul>
-            <a class="link-arrow" href="#contact">Ask about availability</a>
+            <a class="text-link" href="#contact">Ask about availability</a>
           </div>
         </div>
       </div>
