@@ -1,5 +1,5 @@
 # HearthstoneSouthWeber
-Website for Hearthstone South Weber, an assisted living and memory care community in South Weber, Utah (formerly Petersen Farms Assisted Living & Memory Care).
+Website for Hearthstone of South Weber, an assisted living and memory care community in South Weber, Utah.
 
 The site is a single static page, `index.html`, with no build step. To host it on GitHub Pages: Settings → Pages → Deploy from branch → `main` / root.
 
