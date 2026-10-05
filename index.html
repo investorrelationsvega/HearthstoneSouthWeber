@@ -134,7 +134,8 @@
     .care-card li::before { content: ""; position: absolute; left: 4px; top: 15px; width: 12px; height: 7px; border-left: 2px solid var(--olive-600); border-bottom: 2px solid var(--olive-600); transform: rotate(-45deg); }
 
     /* Gallery */
-    .gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; gap: 16px; }
+    .gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; grid-auto-flow: dense; gap: 16px; }
+    .gallery figcaption { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; padding: 28px 16px 12px; font-size: .88rem; font-weight: 500; color: #fff; background: linear-gradient(transparent, rgba(30, 29, 25, .55)); }
     .gallery .photo { height: 100%; }
     .gallery .g-wide { grid-column: span 2; }
     .gallery .g-tall { grid-row: span 2; }
@@ -341,29 +342,42 @@
           <p class="lead">Bright common rooms, home-cooked meals at the table, and gardens just outside the door.</p>
         </div>
         <div class="gallery reveal">
-          <div class="photo g-wide g-tall" data-label="Great room">
+          <figure class="photo g-wide g-tall" data-label="Great room">
             <img src="images/living-room.webp" alt="The great room, with vaulted wood-beam ceilings, chandeliers, sofas, and dining tables" loading="lazy" onerror="this.remove()">
-          </div>
-          <div class="photo" data-label="Kitchen">
+            <figcaption>Great room</figcaption>
+          </figure>
+          <figure class="photo" data-label="Kitchen">
             <img src="images/kitchen.webp" alt="The commercial kitchen where meals are prepared fresh" loading="lazy" onerror="this.remove()">
-          </div>
-          <div class="photo" data-label="Bathroom">
+            <figcaption>Kitchen</figcaption>
+          </figure>
+          <figure class="photo g-tall" data-label="Family room">
+            <img src="images/family-room.webp" alt="A private family dining room with a vaulted ceiling and large window" loading="lazy" onerror="this.remove()">
+            <figcaption>Family room</figcaption>
+          </figure>
+          <figure class="photo" data-label="TV lounge">
+            <img src="images/lounge.webp" alt="The TV lounge with sofas, armchairs, and a piano" loading="lazy" onerror="this.remove()">
+            <figcaption>TV lounge</figcaption>
+          </figure>
+          <figure class="photo g-wide" data-label="Dining room">
+            <img src="images/dining.webp" alt="The dining room with round tables, a beverage station, and open seating area" loading="lazy" onerror="this.remove()">
+            <figcaption>Dining room</figcaption>
+          </figure>
+          <figure class="photo" data-label="Apartment kitchenette">
+            <img src="images/kitchenette.webp" alt="An apartment kitchenette with sink, microwave, and mini fridge, beside a walk-in closet and private bathroom" loading="lazy" onerror="this.remove()">
+            <figcaption>Apartment kitchenette</figcaption>
+          </figure>
+          <figure class="photo" data-label="Private bathroom">
             <img src="images/bathroom.webp" alt="An accessible private bathroom with grab bars and an emergency pull cord" loading="lazy" onerror="this.remove()">
-          </div>
-          <div class="photo" data-label="Memory care">
-            <img src="images/memory-care.jpg" alt="The memory care common area" onerror="this.remove()">
-          </div>
-          <div class="photo" data-label="Activity room">
-            <img src="images/activities.jpg" alt="The activity and arts room" onerror="this.remove()">
-          </div>
+            <figcaption>Private bathroom</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
     <section id="about" class="tint">
       <div class="wrap about-grid">
-        <div class="photo reveal" data-label="Staff or residents photo">
-          <img src="images/community.jpg" alt="The Hearthstone of South Weber team" onerror="this.remove()">
+        <div class="photo reveal" data-label="Exterior">
+          <img src="images/exterior-mountains.webp" alt="One of the Hearthstone buildings, with a covered front porch and the Wasatch mountains behind it" style="object-position: 30% 50%;" loading="lazy" onerror="this.remove()">
         </div>
         <div class="reveal">
           <p class="eyebrow">About Hearthstone</p>
