@@ -441,6 +441,8 @@
     textarea { min-height: 110px; resize: vertical; }
     .form-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 24px; }
     .form-foot small { color: var(--muted); }
+    .field-note { margin: 6px 0 0; font-size: .85rem; color: var(--muted); }
+    .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
     .form-status { margin: 16px 0 0; font-size: .95rem; color: var(--charcoal); font-weight: 500; }
 
     footer { background: var(--charcoal-900); color: #b4b2a5; padding: 72px 0 36px; font-size: .95rem; }
@@ -741,7 +743,8 @@
                   <option>Memory care</option>
                 </select>
               </div>
-              <div class="full"><label for="f-msg">How can we help?</label><textarea id="f-msg" name="message" placeholder="Share anything that would help us understand your situation..."></textarea></div>
+              <div class="full"><label for="f-msg">How can we help?</label><textarea id="f-msg" name="message" aria-describedby="f-msg-note" placeholder="Share anything that would help us understand your situation..."></textarea><p class="field-note" id="f-msg-note">Please don't include medical details. We'll talk through care needs by phone.</p></div>
+              <div class="hp" aria-hidden="true"><label for="f-website">Leave this field empty</label><input id="f-website" name="website" tabindex="-1" autocomplete="off"></div>
             </div>
             <div class="form-foot">
               <button class="btn btn-dark" type="submit">Send message</button>
@@ -786,7 +789,7 @@
   </footer>
 
   <script>
-    // Set to a form endpoint (e.g. Formspree or FormSubmit URL) to receive tour requests by email.
+    // Google Apps Script web app URL (see tools/tour-requests.gs). Empty = ask visitors to call instead.
     const FORM_ENDPOINT = '';
 
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -810,14 +813,19 @@
         status.textContent = 'Online requests are coming soon. Please call us at (801) 479-6000 to schedule your tour.';
         return;
       }
+      const button = form.querySelector('button[type="submit"]');
+      button.disabled = true;
       status.textContent = 'Sending...';
       try {
-        const res = await fetch(FORM_ENDPOINT, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
-        if (!res.ok) throw new Error();
+        const res = await fetch(FORM_ENDPOINT, { method: 'POST', body: new URLSearchParams(new FormData(form)) });
+        const data = await res.json();
+        if (!data.ok) throw new Error();
         form.reset();
         status.textContent = "Thank you! We'll be in touch soon.";
       } catch {
         status.textContent = 'Something went wrong. Please call us at (801) 479-6000.';
+      } finally {
+        button.disabled = false;
       }
     });
 
